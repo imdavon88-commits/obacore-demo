@@ -15,7 +15,7 @@ export default function TradeForm({ side }: { side: "buy" | "sell" }) {
   if (done) return (
     <div className="card text-center space-y-3">
       <span className="sim-badge">Simulated fill</span>
-      <h1 className="text-xl font-semibold text-gold">{title} confirmed</h1>
+      <h1 className="text-xl font-semibold text-gold">Simulated {title.toLowerCase()} confirmed</h1>
       <p className="text-sm text-cream/60">Sample receipt added. No payment, no blockchain transaction.</p>
       <Link href="/history/" className="btn-gold">View history</Link>
       <Link href="/" className="btn-outline">Back to wallet</Link>
